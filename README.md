@@ -75,6 +75,7 @@ You can specify properties of the dice by giving the constructor some values:
 |`new EasyDice(arr, n)`|Returns n custom dice where the outcome for each die is any element of `arr`, with equal probability.|
 
 You can set more properties by instead passing an object to the constructor.
+
 | | |
 |-|-|
 |`new EasyDice(obj)`|Returns dice according to the following table
