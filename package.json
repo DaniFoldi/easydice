@@ -1,10 +1,10 @@
 {
   "name": "easydice",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package for easily creating customizable fair dice",
   "main": "easydice.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "echo No tests yet."
   },
   "repository": {
     "type": "git",
