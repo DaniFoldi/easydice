@@ -49,7 +49,6 @@ let whichPlayerStarts = []
 while (Array.isArray(whichPlayerStarts)) {
   whichPlayerStarts = dice.throw().highestIndex()
 }
-
 ```
 
 ## Randomness
@@ -59,21 +58,24 @@ The package uses `Math.random()` internally, so it can be considered random enou
 ## Documentation
 
 You can specify properties of the dice by giving the constructor some values:
-
-`new EasyDice()` Returns a die with 6 sides.
-`new EasyDice(s)` Returns a die with `s` sides.
-`new EasyDice(s, n)` Returns `n` dice with `s` sides.
-`new EasyDice(arr)` Returns a custom die where the outcome is any element of `arr`, with equal probability.
-`new EasyDice(arr, prob)` Returns a custom die where the outcome is any element of `arr`, with the corresponding relative probability in `prob`.
-`new EasyDice(arr, n)` Returns n custom dice where the outcome for each die is any element of `arr`, with equal probability.
+| | |
+|-|-|
+|`new EasyDice()`|Returns a die with 6 sides.|
+|`new EasyDice(s)`|Returns a die with `s` sides.|
+|`new EasyDice(s, n)`|Returns `n` dice with `s` sides.|
+|`new EasyDice(arr)`|Returns a custom die where the outcome is any element of `arr`, with equal probability.|
+|`new EasyDice(arr, prob)`|Returns a custom die where the outcome is any element of `arr`, with the corresponding relative probability in `prob`.|
+|`new EasyDice(arr, n)`|Returns n custom dice where the outcome for each die is any element of `arr`, with equal probability.|
 
 You can set more properties by instead passing an object to the constructor.
 It accepts the following keys:
-`min` specifies the minimum value for the di(c)e (default: 1)
-`max` specifies the maximum value for the di(c)e (default: 6)
-`count` specifies the number of dice (default: 1)
-`values` specifies that this is a custom die with outcomes from the array (default: undefined)
-`probabilites` specifies the relative probabilities of all items in `values` (default: undefined)
+| | |
+|-|-|
+|`min`|specifies the minimum value for the di(c)e (default: 1)|
+|`max`|specifies the maximum value for the di(c)e (default: 6)|
+|`count`|specifies the number of dice (default: 1)|
+|`values`|specifies that this is a custom die with outcomes from the array (default: undefined)|
+|`probabilites`|specifies the relative probabilities of all items in |`values`|(default: undefined)|
 
 For example:
 
@@ -89,11 +91,13 @@ let result = die.throw()
 ```
 `result` now has the following special functions:
 
-`result.sum()` Returns the sum of all thrown dice
-`result.highestIndex()` Returns the highest thrown value's index as an integer, **or an array if there is a tie**
-`result.highestValue()` Returns the highest thrown value
-`result.lowestIndex()` Returns the lowest thrown value's index as an integer, **or an array if there is a tie**
-`result.lowestValue()` Returns the lowest thrown value
+| | |
+|-|-|
+|`result.sum()`|Returns the sum of all thrown dice|
+|`result.highestIndex()`|Returns the highest thrown value's index as an integer, **or an array if there is a tie**|
+|`result.highestValue()`|Returns the highest thrown value|
+|`result.lowestIndex()`|Returns the lowest thrown value's index as an integer, **or an array if there is a tie**|
+|`result.lowestValue()`|Returns the lowest thrown value|
 
 **Note:**
 `min` and `max` are prioritized over `values` and `probabilities`.
