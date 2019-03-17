@@ -75,7 +75,9 @@ You can specify properties of the dice by giving the constructor some values:
 |`new EasyDice(arr, n)`|Returns n custom dice where the outcome for each die is any element of `arr`, with equal probability.|
 
 You can set more properties by instead passing an object to the constructor.
-It accepts the following keys:
+| | |
+|-|-|
+|`new EasyDice(obj)`|Returns dice according to the following table
 
 | | |
 |-|-|
@@ -87,8 +89,10 @@ It accepts the following keys:
 
 For example:
 
-`new EasyDice({ count: 2 })` Returns 2 dice with 6 sides each.
-`new EasyDice({ values: ["red", "green", "blue"]})` Returns a die where a throw will result in either "red", "green" or "blue".
+| | |
+|-|-|
+|`new EasyDice({ count: 2 })`|Returns 2 dice with 6 sides each.|
+|`new EasyDice({ values: ["red", "green", "blue"]})`|Returns a die where a throw will result in either "red", "green" or "blue".|
 
 If there are more than 1 dice, the returned array contains some special functions:
 ```javascript
