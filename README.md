@@ -1,6 +1,12 @@
 #  EasyDice
 
-
+![NPM bundle size](https://img.shields.io/bundlephobia/min/easydice.svg)
+![NPM downloads per week](https://img.shields.io/npm/dw/easydice.svg)
+![GitHub open issues](https://img.shields.io/github/issues-raw/DaniFoldi/easydice.svg)
+![GitHub open Pull Requests](https://img.shields.io/github/issues-pr-raw/DaniFoldi/easydice.svg)
+![License](https://img.shields.io/github/license/DaniFoldi/easydice.svg)
+![GitHub version](https://img.shields.io/github/package-json/v/DaniFoldi/easydice.svg)
+![NPM version](https://img.shields.io/npm/v/easydice.svg)
 
 ## Install
 
