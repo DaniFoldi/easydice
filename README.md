@@ -64,6 +64,7 @@ The package uses `Math.random()` internally, so it can be considered random enou
 ## Documentation
 
 You can specify properties of the dice by giving the constructor some values:
+
 | | |
 |-|-|
 |`new EasyDice()`|Returns a die with 6 sides.|
@@ -75,6 +76,7 @@ You can specify properties of the dice by giving the constructor some values:
 
 You can set more properties by instead passing an object to the constructor.
 It accepts the following keys:
+
 | | |
 |-|-|
 |`min`|specifies the minimum value for the di(c)e (default: 1)|
