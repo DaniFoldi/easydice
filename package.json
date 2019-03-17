@@ -1,0 +1,25 @@
+{
+  "name": "easydice",
+  "version": "1.0.0",
+  "description": "A package for easily creating customizable fair dice",
+  "main": "easydice.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaniFoldi/easydice.git"
+  },
+  "keywords": [
+    "dice",
+    "game",
+    "throw"
+  ],
+  "author": "Dániel Földi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DaniFoldi/easydice/issues"
+  },
+  "homepage": "https://github.com/DaniFoldi/easydice#readme",
+  "readmeFilename": "README.md"
+}
