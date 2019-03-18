@@ -21,5 +21,6 @@
     "url": "https://github.com/DaniFoldi/easydice/issues"
   },
   "homepage": "https://github.com/DaniFoldi/easydice#readme",
-  "readmeFilename": "README.md"
+  "readmeFilename": "README.md",
+  "runkitExampleFilename": "example.js"
 }

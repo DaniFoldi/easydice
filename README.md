@@ -16,6 +16,8 @@
 npm i easydice
 ```
 
+[![Try on RunKit](https://badge.runkitcdn.com/easydice.svg)](https://npm.runkit.com/easydice)
+
 ## Getting started
 
 After you have installed the package, import it like this:
