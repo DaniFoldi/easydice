@@ -67,6 +67,22 @@ let dice = new EasyDice("5d20") // lowercase or uppercase d can be used
 
 The package uses `Math.random()` internally, so it can be considered random enough for dice. The results should be equally distributed.
 
+You can test it if unsure with a code example like this:
+
+```javascript
+let EasyDice = require('.')
+
+let testDie = new EasyDice()
+let count = Array(6).fill(0)
+
+for (let i = 0; i < 10000000; i++) {
+  count[testDie.throw() - 1]++
+}
+console.log(count)
+console.log(EasyDice.highestValue(count) - EasyDice.lowestValue(count))
+```
+Most of the time you will end up with values that are pretty close together
+
 ## Documentation
 
 You can specify properties of the dice by giving the constructor some values:
