@@ -59,6 +59,11 @@ while (Array.isArray(whichPlayerStarts)) {
 }
 ```
 
+```javascript
+let dice = new EasyDice("5d20") // lowercase or uppercase d can be used
+// Creates 5 dice with 20 sides each
+```
+
 ## Randomness
 
 The package uses `Math.random()` internally, so it can be considered random enough for dice. The results should be equally distributed.
@@ -96,6 +101,13 @@ For example:
 |-|-|
 |`new EasyDice({ count: 2 })`|Returns 2 dice with 6 sides each.|
 |`new EasyDice({ values: ["red", "green", "blue"]})`|Returns a die where a throw will result in either "red", "green" or "blue".|
+
+In some RPG games you specify dice with `CdM` where `C` is the count of dice and `M` is the maximum value.
+
+| | |
+|-|-|
+|`new EasyDice('CdM')`|Returns C dice with M being the maximum value for each.|
+`C` defaults to 1, `M` defaults to 6.
 
 If there are more than 1 dice, the returned array contains some special functions:
 ```javascript

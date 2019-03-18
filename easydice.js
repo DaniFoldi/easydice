@@ -7,6 +7,52 @@
 
 class EasyDice {
   constructor(a, b) {
+    if (typeof a === "number") {
+      a = Math.max(Math.round(a), 0)
+    }
+    if (typeof b === "number") {
+      b = Math.max(Math.round(b), 0)
+    }
+    if (typeof a === "string") {
+      if (parseInt(a) + "" === a) {
+        a = parseInt(a)
+      } else if (typeof b === "undefined") {
+        if (a.includes("d")) {
+          let first = a.split("d")[0]
+          let second = a.split("d")[1]
+          if (first === "") {
+            this.count = 1
+          } else {
+            this.count = first
+          }
+          if (second === "") {
+            this.max = 6
+          } else {
+            this.max = second
+          }
+          this.min = 1
+        } else if (a.includes("D")) {
+          let first = a.split("D")[0]
+          let second = a.split("D")[1]
+          if (first === "") {
+            this.count = 1
+          } else {
+            this.count = first
+          }
+          if (second === "") {
+            this.max = 6
+          } else {
+            this.max = second
+          }
+          this.min = 1
+        }
+      }
+    }
+    if (typeof b === "string") {
+      if (parseInt(b) + "" === b) {
+        b = parseInt(b)
+      }
+    }
     if (typeof a === "undefined" && typeof b === "undefined") {
       this.min = 1
       this.max = 6
