@@ -124,6 +124,10 @@ let result = die.throw()
 |`result.highestValue()`|Returns the highest thrown value|
 |`result.lowestIndex()`|Returns the lowest thrown value's index as an integer, **or an array if there is a tie**|
 |`result.lowestValue()`|Returns the lowest thrown value|
+|`result.notHighestIndex()`|Returns the all but the highest value's indices as an array|
+|`result.notHighestValue()`|Returns the all but the highest thrown value as an array|
+|`result.notLowestIndex()`|Returns the all but the lowest value's indices as an array|
+|`result.notLowestValue()`|Returns the all but the lowest thrown value as an array|
 
 **Note:**
 `min` and `max` are prioritized over `values` and `probabilities`.

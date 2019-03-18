@@ -181,6 +181,50 @@ class EasyDice {
     }
   }
 
+  static notHighestIndex(a) {
+    let result = []
+    let highestValue = EasyDice.highestValue(a)
+    for (let i = 0; i < a.length; i++) {
+      if (a[i] < highestValue) {
+        result.push(i)
+      }
+    }
+    return result
+  }
+
+  static notHighestValue(a) {
+    let result = []
+    let highestValue = EasyDice.highestValue(a)
+    for (let i = 0; i < a.length; i++) {
+      if (a[i] < highestValue) {
+        result.push(a[i])
+      }
+    }
+    return result
+  }
+
+  static notLowestIndex(a) {
+    let result = []
+    let lowestValue = EasyDice.lowestValue(a)
+    for (let i = 0; i < a.length; i++) {
+      if (a[i] > lowestValue) {
+        result.push(i)
+      }
+    }
+    return result
+  }
+
+  static notLowestValue(a) {
+    let result = []
+    let lowestValue = EasyDice.lowestValue(a)
+    for (let i = 0; i < a.length; i++) {
+      if (a[i] > lowestValue) {
+        result.push(a[i])
+      }
+    }
+    return result
+  }
+
   static lowestIndex(a) {
     let result = []
     for (let i = 0; i < a.length; i++) {
