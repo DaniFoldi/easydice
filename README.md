@@ -39,13 +39,12 @@ let die2 = new EasyDice(20)
 
 let result2 = die2.throw()
 // Returns the thrown value as a number
-
-let playerCount = 2
 ```
 
 In some games you decide which player starts by getting everyone to throw a die, and whoever has highest, goes first.
 
 ```javascript
+let playerCount = 2
 let dice = new EasyDice({count: playerCount})
 // Creates two dice with 6 sides each
 
