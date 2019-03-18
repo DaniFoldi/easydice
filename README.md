@@ -136,6 +136,9 @@ Do not use the special functions if `values` is used and it contains elements th
 
 ## Contribution
 
+![GitHub contributors](https://img.shields.io/github/contributors/danifoldi/easydice.svg)
+![GitHub commits per month](https://img.shields.io/github/commit-activity/m/danifoldi/easydice.svg)
+
 You are welcome to open Pull Requests which add new functionality, contain bugfixes or general improvements to the code.
 
 ## License
