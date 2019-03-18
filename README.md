@@ -120,6 +120,7 @@ let result = die.throw()
 | | |
 |-|-|
 |`result.sum()`|Returns the sum of all thrown dice|
+|`result.product()`|Returns the product of all thrown dice|
 |`result.highestIndex()`|Returns the highest thrown value's index as an integer, **or an array if there is a tie**|
 |`result.highestValue()`|Returns the highest thrown value|
 |`result.lowestIndex()`|Returns the lowest thrown value's index as an integer, **or an array if there is a tie**|

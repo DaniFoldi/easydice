@@ -145,6 +145,14 @@ class EasyDice {
     return sum
   }
 
+  static product(a) {
+    let product = 1
+    for (let i = 0; i < a.length; i++) {
+      product *= a[i]
+    }
+    return product
+  }
+
   static highestValue(a) {
     let result = -Infinity
     for (let i = 0; i < a.length; i++) {
@@ -278,6 +286,9 @@ class Result {
   sum() {
     return EasyDice.sum(this.values)
   }
+  product() {
+    return EasyDice.product(this.values)
+  }
   highestValue() {
     return EasyDice.highestValue(this.values)
   }
@@ -289,6 +300,18 @@ class Result {
   }
   lowestIndex() {
     return EasyDice.lowestIndex(this.values)
+  }
+  notHighestValue() {
+    return EasyDice.notHighestValue(this.values)
+  }
+  notHighestIndex() {
+    return EasyDice.notHighestIndex(this.values)
+  }
+  notLowestValue() {
+    return EasyDice.notLowestValue(this.values)
+  }
+  notLowestIndex() {
+    return EasyDice.notLowestIndex(this.values)
   }
 }
 
