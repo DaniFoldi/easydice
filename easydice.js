@@ -53,7 +53,7 @@ class EasyDice {
         b = parseInt(b)
       }
     }
-    if (typeof a === "undefined" && typeof b === "undefined") {
+    if (typeof a === "undefined" && typeof b === "undefined") {
       this.min = 1
       this.max = 6
       this.count = 1
