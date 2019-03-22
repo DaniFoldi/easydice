@@ -155,6 +155,48 @@ class EasyDice {
     }
   }
 
+  static tetrahedron(a) {
+    if (typeof a !== "number") {
+      a = 1
+    }
+    return new EasyDice(4, a)
+  }
+
+  static hexahedron(a) {
+    if (typeof a !== "number") {
+      a = 1
+    }
+    return new EasyDice(6, a)
+  }
+
+  static cube(a) {
+    if (typeof a !== "number") {
+      a = 1
+    }
+    return new EasyDice(6, a)
+  }
+
+  static octahedron(a) {
+    if (typeof a !== "number") {
+      a = 1
+    }
+    return new EasyDice(8, a)
+  }
+
+  static dodecahedron(a) {
+    if (typeof a !== "number") {
+      a = 1
+    }
+    return new EasyDice(12, a)
+  }
+
+  static icosahedron(a) {
+    if (typeof a !== "number") {
+      a = 1
+    }
+    return new EasyDice(20, a)
+  }
+
   static sum(a) {
     let sum = 0
     for (let i = 0; i < a.length; i++) {
