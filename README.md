@@ -70,7 +70,7 @@ The package uses `Math.random()` internally, so it can be considered random enou
 You can test it if unsure with a code example like this:
 
 ```javascript
-let EasyDice = require('.')
+let EasyDice = require('easydice')
 
 let testDie = new EasyDice()
 let count = Array(6).fill(0)
