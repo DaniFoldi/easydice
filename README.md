@@ -45,7 +45,7 @@ In some games you decide which player starts by getting everyone to throw a die,
 
 ```javascript
 let playerCount = 2
-let dice = new EasyDice({count: playerCount})
+let dice = new EasyDice({ count: playerCount })
 // Creates two dice with 6 sides each
 
 let startingThrow = dice.throw()
