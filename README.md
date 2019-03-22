@@ -124,6 +124,13 @@ In some RPG games you specify dice with `CdM` where `C` is the count of dice and
 |`new EasyDice('CdM')`|Returns C dice with M being the maximum value for each.|
 `C` defaults to 1, `M` defaults to 6.
 
+You can throw the di(c)e with `.throw()`.
+_New in v1.3.0_
+It can also take in a number as an argument (`.throw(n)`), which results in an array of `n` throws. If `n` is one, a single `Result` object is returned.
+
+_New in v1.3.0_
+EasyDice objects now have a `.history` array, which contains all previously thrown values. If multiple throws are asked at a single time, history still contains them as a flattened array.
+
 If there are more than 1 dice, the returned array contains some special functions:
 ```javascript
 let EasyDice = require('easydice')
