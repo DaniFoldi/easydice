@@ -113,27 +113,45 @@ class EasyDice {
         this.probabilities = EasyDice.normalize(probabilities)
       }
     }
+
+    this.history = []
   }
 
-  throw() {
-    if (this.count === 1) {
-      if (typeof this.min === "number") {
-        return EasyDice.random(this.min, this.max)
+  throw(howmany = 1) {
+    if (typeof howmany !== "number") {
+      howmany = 1
+    }
+    let values = []
+    for (let i = 0; i < howmany; i++) {
+      if (this.count === 1) {
+        if (typeof this.min === "number") {
+          let result = EasyDice.random(this.min, this.max)
+          this.history.push(result)
+          values.push(result)
+        } else {
+          let result = EasyDice.randomElement(this.values, this.probabilities)
+          this.history.push(result)
+          values.push(result)
+        }
       } else {
-        return EasyDice.randomElement(this.values, this.probabilities)
+        let result = new Result()
+        if (typeof this.min === "number") {
+          for (let i = 0; i < this.count; i++) {
+            result.values.push(EasyDice.random(this.min, this.max))
+          }
+        } else {
+          for (let i = 0; i < this.count; i++) {
+            result.values.push(EasyDice.randomElement(this.values, this.probabilities))
+          }
+        }
+        this.history.push(result)
+        values.push(result)
       }
+    }
+    if (howmany === 1) {
+      return values[0]
     } else {
-      let result = new Result()
-      if (typeof this.min === "number") {
-        for (let i = 0; i < this.count; i++) {
-          result.values.push(EasyDice.random(this.min, this.max))
-        }
-      } else {
-        for (let i = 0; i < this.count; i++) {
-          result.values.push(EasyDice.randomElement(this.values, this.probabilities))
-        }
-      }
-      return result
+      return values
     }
   }
 
