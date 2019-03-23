@@ -119,15 +119,16 @@ For example:
 
 _New in v1.3.1_
 
-`EasyDice` now has convenience initializers for regular polihedra:
+`EasyDice` now has convenience initializers for regular polyhedra:
+
 | | |
 |-|-|
 |`EasyDice.tetrahedron(c)`|Returns `c` tetrahedron shaped dice (4 sides)|
-|`EasyDice.hexahedron(c)`|Returns `c` cube shaped dice (4 sides)|
-|`EasyDice.cube(c)`|Returns `c` cube shaped dice (4 sides)|
-|`EasyDice.octahedron(c)`|Returns `c` octahedron shaped dice (4 sides)|
-|`EasyDice.dodecahedron(c)`|Returns `c` dodecahedron shaped dice (4 sides)|
-|`EasyDice.icosahedron(c)`|Returns `c` icosahedron shaped dice (4 sides)|
+|`EasyDice.hexahedron(c)`|Returns `c` cube shaped dice (6 sides)|
+|`EasyDice.cube(c)`|Returns `c` cube shaped dice (6 sides)|
+|`EasyDice.octahedron(c)`|Returns `c` octahedron shaped dice (8 sides)|
+|`EasyDice.dodecahedron(c)`|Returns `c` dodecahedron shaped dice (12 sides)|
+|`EasyDice.icosahedron(c)`|Returns `c` icosahedron shaped dice (20 sides)|
 
 In some RPG games you specify dice with `CdM` where `C` is the count of dice and `M` is the maximum value.
 
